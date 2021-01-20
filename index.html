@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meditation app</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="app">
+        <div class="vid-container">
+            <video class="video" src="./video/rain.mp4" loop muted type="video/mp4"></video>
+        </div>
+        <section class="time-selection">
+          <button data-time="120" class="time-btn two-min">2 minutes</button>
+          <button data-time="300" class="time-btn five-min">5 minutes</button>
+          <button data-time="600" class="time-btn ten-min">10 minutes</button>
+        </section>
+        <section class="chrono">
+            <audio class="song" src="sounds/rain.mp3" loop></audio>
+            <img class="play-btn" src="./svg/play.svg" alt="">
+
+            <svg class="track-outline"
+            width="453" 
+            height="453" 
+            viewBox="0 0 453 453" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg">
+            <circle 
+            cx="226.5" 
+            cy="226.5" 
+            r="216.5" 
+            stroke="white" 
+            stroke-width="20"/>
+            </svg>
+
+            <svg class="moving-outline"
+            width="453" 
+            height="453" 
+            viewBox="0 0 453 453" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg">
+            <circle 
+            cx="226.5" 
+            cy="226.5" 
+            r="216.5" 
+            stroke="#018EBA" 
+            stroke-width="20"/>
+            </svg>
+
+            <h3 class="time-display">00:00</h3>
+        </section>
+        <section class="theme-selection">
+           <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4" class="theme-btn" id="beach-theme">
+            <img src="svg/beach.svg" class="logo"></img>
+            </button>
+           <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4" class="theme-btn" id="rain-theme">
+            <img src="svg/rain.svg" class="logo"></img>
+        </button>
+        </section>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
